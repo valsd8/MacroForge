@@ -34,6 +34,9 @@ For now this only run on windows where office is installed. Dont forget to check
 
 ![Enabling VBA object model](content/objectModelVBA.png)
 
+
+Having a reverse shell using the cli
 ![Simple example on how to get a reverse shell using the tool with the cli](content/reverse_shell_demo.png)
 
+Having a reverse shell using the interactive prompt
 ![same with the interactive mode](content/reverse_shell_using_interactive.png)
