@@ -22,7 +22,7 @@
 ## 🛠️ Installation (You may need to use a virtual python env)
 
 ```bash
-git clone https://github.com/yourusername/macroforge.git
+git clone https://github.com/valsd8/MacroForge
 cd macroforge
 pip install -r requirements.txt
 ```
