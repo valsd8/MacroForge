@@ -31,6 +31,9 @@ pip install -r requirements.txt
 
 For now this only run on windows where office is installed. Dont forget to check this case in Word and Excel or else it will fails. 
 
+
+![Enabling VBA object model](content/objectModelVBA.png)
+
 ## Help Command
 
 ```bash
@@ -63,9 +66,6 @@ options:
   --yes, -y             Skip prompts
   
 ```
-
-
-![Enabling VBA object model](content/objectModelVBA.png)
 
 
 **Getting a reverse shell using the cli**
