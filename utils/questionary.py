@@ -21,7 +21,7 @@ def interactive():
             interactive: if False, uses defaults (useful for tests / automation)
             """
             if not interactive:
-                # defaults for non-interactive mode
+                
                 file_choice = "Word"
                 payload_choice = "notepad.exe"
                 obfuscate_choice = True
@@ -34,7 +34,7 @@ def interactive():
                     choices=["Word", "Excel"]
                 ).ask()
 
-                # if user aborted questionary returns None
+                
                 if file_choice is None:
                     raise KeyboardInterrupt
                 print("\n[!] If you choose 'type your own payload', the command may break.")
@@ -68,7 +68,7 @@ def interactive():
 
     print(f"You chose file: {file_choice}, payload type: {payload_choice}")
 
-        # Dispatch safely to stub handlers
+        
     if file_choice == "Word":
         if payload_choice == "revshell":
             ip = questionary.text(

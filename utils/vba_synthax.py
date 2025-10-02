@@ -25,7 +25,7 @@ def convertToVbaSynthax(input_string, chunk_size=20, declare=True):
 
     for i, chunk in enumerate(chunks):
         if i < 26:
-            var_name = chr(ord('a') + i)  # single-letter variable names a..z
+            var_name = chr(ord('a') + i) 
         else:
             var_name = generate_var_name(used_names)
         variables[var_name] = chunk
@@ -34,21 +34,21 @@ def convertToVbaSynthax(input_string, chunk_size=20, declare=True):
 
     lines = []
 
-    # Optional: variable declarations
+    
     if declare:
-        # All vars declared on one line per your original style
+        
         for var_name in var_names:
             lines.append(f'Dim {var_name} As String')
-        lines.append("")  # blank line
+        lines.append("")  
 
-    # assignments
+   
     for var_name in var_names:
-        # Escape any double quotes in chunk (VBA string literal)
+       
         chunk = variables[var_name].replace('"', '""')
         lines.append(f'{var_name} = "{chunk}"')
-    lines.append("")  # blank line
+    lines.append("")  
 
-    # final joined cmd line using & concatenation
+    
     joined_vars = " & ".join(var_names)
     lines.append(f'cmd = {joined_vars}')
 

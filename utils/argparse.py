@@ -5,7 +5,7 @@ from payloads.Word import payloadWord
 from utils.vba_synthax import convertToVbaSynthax
 
 def parse_args():
-    import argparse  # best to re-import explicitly here
+    import argparse  
 
     def build_arg_parser():
         p = argparse.ArgumentParser(

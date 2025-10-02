@@ -36,6 +36,5 @@ def banner():
 
     console.print(panel)
 
-# logging_setup.py
 
 

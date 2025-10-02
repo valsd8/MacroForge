@@ -31,7 +31,7 @@ def payloadExcel(payload_choice):
             excel.Visible = False
             wb = excel.Workbooks.Add()
 
-            # Save first to establish file
+            
             wb.SaveAs(str(file_path), FileFormat=52)
 
             vb_proj = wb.VBProject
